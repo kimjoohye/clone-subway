@@ -34,7 +34,7 @@ export const LogoLink = styled(Link)`
   position: absolute; left: 50%;
   top: 40px; width: 202px; height: 40px;
   transform: translate(-50%, 0);
-  background: url('/images/logo.png');
+  background: url('../styles/img/logo.png');
   font-size: 0px; z-index: 10000;
 `
 const Menudropdown = keyframes`
@@ -133,7 +133,7 @@ export const SideLink2th = styled(Link)`
 
 export const LogoGlobal = styled(Link)`
   position: absolute; width: 30px; height: 30px;
-  background: url('/images/icon_global.png');
+  background: url('https://kimjoohye.github.io/clone-subway/images/icon_global.png');
   background-repeat: no-repeat;
   background-position: 0 0;
   line-height: 0;
