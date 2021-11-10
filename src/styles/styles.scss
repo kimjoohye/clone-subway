@@ -1,0 +1,342 @@
+$maincolor: #009223;
+
+.swicontent{
+    width: 290px;
+    img{
+        box-sizing: border-box;
+        padding: 0 10px;
+        width: 290px; height: 182px;
+    }
+    &:hover::after{
+        content: "";
+        background: url('./img/btn_more.png') no-repeat 0px 0px;
+        display: inline-block;
+        width: 98px; height: 98px;
+        position: absolute;
+        top: 48%; left: 50%;
+        transform: translate(-50%,0) scale(0.8);
+    }
+    &:hover{
+        display: inline-block;
+        transform: scale(1.2);
+        padding: 15px 5px 0px 10px; 
+        p,strong{ 
+            display: none;
+        }
+    }
+}
+.swiLink{
+    text-decoration: none; text-align: center;
+    display: inline-block; height: 320px;
+}
+
+//메인 상단 2
+.content_second{
+    background: url('./img/section02.png') no-repeat;
+    height: 790px;
+}
+.second_f{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    padding-top: 85px;
+}
+.enjoyCon{
+    position: relative;
+    width: 400px; height: 300px;
+    margin-left: 60px;
+    background: url('https://www.subway.co.kr/images/main/bg_utilization.png') no-repeat;
+
+    p{
+        font-size: 29px;
+        color: white;
+        font-weight: bolder;
+        letter-spacing: -0.03em;
+        line-height: 40px;
+        position: absolute;
+        top: 38px; left: 38px;
+    }
+
+    .enjoyLink{
+        position: absolute;
+        bottom: 40px; left: 38px;
+        border-radius: 20px;
+        border: 2px solid white;
+        color: white; font-size: 16px;
+        width: 95px; height: 40px;
+        box-sizing: border-box;
+        text-align: center; padding: 9px 0px;
+        text-decoration: none; font-weight: bold;
+    }
+}
+
+.subwayHis{
+    position: relative;
+    width: 830px; height: 300px;
+    background: url('https://www.subway.co.kr/images/main/img_subway_history.png') no-repeat;
+
+    p{
+        font-size: 29px;
+        color: white; font-weight: bolder;
+        position: absolute;
+        right: 95px; top: 38px;
+        letter-spacing: -0.03em;
+        line-height: 40px;
+    }
+
+    .HisLink{
+        position: absolute;
+        bottom: 40px; right: 275px;
+        border-radius: 20px;
+        border: 2px solid white;
+        color: white; font-size: 16px;
+        width: 132px; height: 40px;
+        box-sizing: border-box;
+        text-align: center; padding: 9px 0px;
+        text-decoration: none; font-weight: bold;
+    }
+}
+
+.second_s{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    padding-top: 40px;
+}
+.news{
+    position: relative;
+    width: 860px; height: 300px;
+    background-color: white;
+    border-radius: 40px 0px 40px 0px;
+    margin-right: 30px;
+
+    span:first-child{
+        display: inline-block;
+        position: absolute;
+        top: 75px; left: 68px;
+        p:first-child{
+            font-family: 'SBAggroB';  
+            color: #292929; font-size: 28px;
+            font-weight: bold;
+            padding: 17px 0px 0px 18px;
+            background-image: url('./img/bul_tit.png');
+            background-repeat: no-repeat;
+            background-size: 53px;
+            position: relative; height: 40px;
+        }
+        p:nth-child(2){
+            padding-top: 20px;
+            text-align: center;
+            line-height: 25px; font-weight: bold;
+        }
+    }
+
+    span:nth-child(2){
+        display: inline-block;
+        position: absolute;
+        top: 70px; right: 144px;
+        ul{
+            list-style: none;
+            li{
+                .newsli{
+                    position: relative;
+                    text-decoration: none;
+                    color: black;
+                    font-weight: bold;
+                    font-size: 16px;
+                }
+                .newsli:hover{
+                    color: $maincolor;
+                }
+                .newsli::after{
+                    content: '';
+                    position: absolute;
+                    left: 0px; bottom: -1px;
+                    display: inline-block;
+                    width: 0px; height: 1px;
+                    transition: all 0.3s;
+                    background-color: $maincolor;
+                }
+                .newsli:hover::after{
+                    display: inline-block;
+                    width: 100%;
+
+                }
+            }
+            li:nth-child(2), li:nth-child(3){
+                margin-top: 20px;
+            }
+        }
+        .newsMore{
+            display: inline-block;
+            margin-top: 40px;
+            text-decoration: none;
+        }
+    }
+}
+.ad{
+    background: url('./img/ad.jpg') no-repeat 0 0;
+    width: 270px; height: 300px;
+    border-radius: 0px 40px 0px 40px;
+}
+
+//메인 상단3 - 빠른 메뉴
+.quickmenu{
+    padding: 35px 0px;
+    ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        li{
+            position: relative;
+            margin-left: 80px;
+
+            .quicklink{
+                text-decoration: none;
+                display: flex;
+                height: 70px;
+
+                div{
+                    width: 70px; height: 70px;
+                    background: url('./img/icon_quickmenu.png') no-repeat;
+                }
+                .quick1{
+                    background-position: 0px 0px;
+                }
+                .quick2{
+                    background-position: -70px 0px;
+                }
+                .quick3{
+                    background-position: -140px 0px;
+                }
+                .quick4{
+                    background-position: -210px 0px;
+                }
+
+                span{
+                    padding: 10px 0px 10px 20px;
+                    b{
+                        font-size: 18px;
+                        display: inline-block;
+                        margin-bottom: 10px;
+                        color: black;
+                        font-weight: 800;
+                    }
+                    p{
+                        font-size: 13px;
+                    }    
+                }
+            }
+        }
+        li:first-child{
+            margin-left: 0px;
+        }
+    }
+}
+
+//푸터
+.footer{
+    position: relative;
+    padding: 20px 0px;
+    background-color: #292929;
+
+    .content{
+        margin-left: 180px;
+        ul:first-child{
+            list-style: none;
+            margin-bottom: 35px;
+
+            li{
+                display: inline-block;
+                margin-right: 30px;
+
+                .Fcontentli{
+                    text-decoration: none;
+                    font-size: 14px;
+                    
+                    b{
+                        font-size: 14px;
+                        color: #bbbbbb;
+                    }
+                }
+            }
+        }
+
+        ul:nth-child(2){
+            list-style: none;
+            li{
+                display: inline-block;
+                padding-right: 10px;
+                font-size: 13px;
+            }
+            li::after{
+                content: '';
+                position: relative;
+                top: 1px;
+                display: inline-block;
+                width: 2px; height: 11px;
+                background-color: #666666;
+                margin-left: 10px;
+
+            }
+            li:nth-child(4)::after{
+                display: none;
+            }
+        }
+        span{
+            display: inline-block;
+            font-size: 13px;
+            margin-top: 10px;
+        }
+        button{
+            border: none;
+            cursor: pointer;
+        }
+        .insta, .facebook{
+            display: inline-block;
+            width: 50px; height: 50px;
+            position: absolute;
+            bottom: 17px; right: 190px;          
+        }
+        .insta{
+            right: 250px;
+            background: url('./img/icon_sns_instar.png') no-repeat 0 0;
+        }
+        .facebook{
+            background: url('./img/icon_sns_facebook.png') no-repeat 0 0;
+        }
+        
+        .insta::after{
+            content: '';
+            display: inline-block;
+            width: 50px; height: 50px;
+            background: url('./img/icon_sns_instar.png') no-repeat 100% 0;
+            opacity: 0;
+            transition-duration: 0.2s;  
+        }
+        .insta:hover::after{
+            display: inline-block;
+            opacity: 1;
+        }
+        .facebook::after{
+            content: '';
+            display: inline-block;
+            width: 50px; height: 50px;
+            background: url('./img/icon_sns_facebook.png') no-repeat 100% 0;
+            opacity: 0;
+            transition-duration: 0.2s;  
+        }
+        .facebook:hover::after{
+            display: inline-block;
+            opacity: 1;
+        }
+    }
+}
+.footer::after{
+    content: '';
+    width: 100%; height: 1px;
+    display: inline-block;
+    position: absolute;
+    top: 55px;
+    background-color: #666666;
+}
