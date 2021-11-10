@@ -1,4 +1,15 @@
 $maincolor: #009223;
+$logo_s: url('./img/logo_s.png');
+$icon_global: url('../styles/img/icon_global.png');
+$icon_map: url('./img/icon_map.png');
+$icon_franchise: url('./img/icon_franchise.png');
+$bul_tit: url('./img/bul_tit.png');
+$btn_more: url('./img/btn_more.png');
+$section02: url('./img/section02.png');
+$ad: url('./img/ad.jpg');
+$quickmenu: url('./img/icon_quickmenu.png');
+$instar: url('./img/icon_sns_instar.png');
+$facebook: url('./img/icon_sns_facebook.png');
 
 //헤더
 .nav{
@@ -19,7 +30,7 @@ $maincolor: #009223;
     position: absolute; left: 50%;
     top: 40px; width: 202px; height: 40px;
     transform: translate(-50%, 0);
-    background: url('./img/logo_s.png');
+    background: $logo_s;
     font-size: 0px; z-index: 10000;
 }
 
@@ -57,7 +68,7 @@ $maincolor: #009223;
 
 .global{
     position: absolute; width: 30px; height: 30px;
-    background: url('./img/icon_global.png');
+    background: $icon_global;
     background-repeat: no-repeat;
     background-position: 0 0;
     line-height: 0;
@@ -86,7 +97,7 @@ $maincolor: #009223;
     
     &::before{
       content:"";
-      background: url("./img/icon_map.png") no-repeat 0px 0px;
+      background: $icon_map no-repeat 0px 0px;
       vertical-align: middle;
       display: inline-block;
       width: 24px; height: 30px;
@@ -106,7 +117,7 @@ $maincolor: #009223;
   
     &::before{
       content:"";
-      background: url("./img/icon_franchise.png") no-repeat 0px 0px;
+      background: $icon_franchise no-repeat 0px 0px;
       vertical-align: middle;
       display: inline-block;
       width: 33px; height: 30px;
@@ -124,7 +135,7 @@ $maincolor: #009223;
     color: #292929; font-size: 35px;
     font-weight: bolder;
     padding: 15px 0px 0px 20px;
-    background-image: url('./img/bul_tit.png');
+    background-image: $bul_tit;
     background-repeat: no-repeat;
     background-size: 53px;
     width: 1170px; position: relative;
@@ -153,7 +164,7 @@ $maincolor: #009223;
     }
     &:hover::after{
         content: "";
-        background: url('./img/btn_more.png') no-repeat 0px 0px;
+        background: $btn_more no-repeat 0px 0px;
         display: inline-block;
         width: 98px; height: 98px;
         position: absolute;
@@ -176,7 +187,7 @@ $maincolor: #009223;
 
 //메인 상단 2
 .content_second{
-    background: url('./img/section02.png') no-repeat;
+    background: $section02 no-repeat;
     height: 790px;
 }
 .second_f{
@@ -263,7 +274,7 @@ $maincolor: #009223;
             color: #292929; font-size: 28px;
             font-weight: bold;
             padding: 17px 0px 0px 18px;
-            background-image: url('./img/bul_tit.png');
+            background-image: $bul_tit;
             background-repeat: no-repeat;
             background-size: 53px;
             position: relative; height: 40px;
@@ -319,7 +330,7 @@ $maincolor: #009223;
     }
 }
 .ad{
-    background: url('./img/ad.jpg') no-repeat 0 0;
+    background: $ad no-repeat 0 0;
     width: 270px; height: 300px;
     border-radius: 0px 40px 0px 40px;
 }
@@ -342,7 +353,7 @@ $maincolor: #009223;
 
                 div{
                     width: 70px; height: 70px;
-                    background: url('./img/icon_quickmenu.png') no-repeat;
+                    background: $quickmenu no-repeat;
                 }
                 .quick1{
                     background-position: 0px 0px;
@@ -444,17 +455,17 @@ $maincolor: #009223;
         }
         .insta{
             right: 250px;
-            background: url('./img/icon_sns_instar.png') no-repeat 0 0;
+            background: $instar no-repeat 0 0;
         }
         .facebook{
-            background: url('./img/icon_sns_facebook.png') no-repeat 0 0;
+            background: $facebook no-repeat 0 0;
         }
         
         .insta::after{
             content: '';
             display: inline-block;
             width: 50px; height: 50px;
-            background: url('./img/icon_sns_instar.png') no-repeat 100% 0;
+            background: $instar no-repeat 100% 0;
             opacity: 0;
             transition-duration: 0.2s;  
         }
@@ -466,7 +477,7 @@ $maincolor: #009223;
             content: '';
             display: inline-block;
             width: 50px; height: 50px;
-            background: url('./img/icon_sns_facebook.png') no-repeat 100% 0;
+            background: $facebook no-repeat 100% 0;
             opacity: 0;
             transition-duration: 0.2s;  
         }
