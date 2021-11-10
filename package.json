@@ -1,7 +1,7 @@
 {
   "name": "to-dolist",
   "version": "0.1.0",
-  "homepage": "https//kimjoohye.github.io/clone-subway",
+  "homepage": "https://kimjoohye.github.io/clone-subway",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
