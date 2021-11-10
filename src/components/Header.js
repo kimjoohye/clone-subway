@@ -1,6 +1,6 @@
 import React, { useState} from 'react'
-import { Ul, Li, Nav, NavLink, SideLink, SideLink2th, LogoLink, LogoGlobal,
-     SideUl, SideLi, DropdownLi, Dropdownul, Subpan, Subpans, Submenu } from './styledComp'
+import {Link} from 'react-router-dom'
+import { Li, NavLink, SideUl, SideLi, DropdownLi, Dropdownul, Subpan, Subpans, Submenu } from './styledComp'
 
 function Header(){
 
@@ -20,9 +20,9 @@ function Header(){
 
     return <div style={main}>
             <header style={{ height: '100%', width: '100%'}}>
-                <LogoLink to="/">SUBWAY</LogoLink>
-                <Nav>
-                    <Ul onMouseEnter={() => {setDropdown(true); setEnter(1)}} 
+                <Link to="/" className="logolink">SUBWAY</Link>
+                <nav className="nav">
+                    <ul className="ul" onMouseEnter={() => {setDropdown(true); setEnter(1)}} 
                 onMouseLeave={() => { setDropdown(false);}}>
                         <Li>
                             <NavLink to="/">메뉴소개</NavLink>
@@ -42,8 +42,8 @@ function Header(){
                         <Li>
                             <NavLink to="/">온라인주문</NavLink>
                         </Li>
-                    </Ul>
-                </Nav>
+                    </ul>
+                </nav>
 
                 {/* 서브메뉴 */}
                 <Subpan onMouseOver={() => {setDropdown(true);}} 
@@ -90,9 +90,9 @@ function Header(){
                 </Subpan>
 
                 <SideUl>
-                        <SideLi><SideLink to="/login">로그인</SideLink></SideLi>
-                        <SideLi><SideLink2th to="/submit">회원가입</SideLink2th></SideLi>
-                        <li style={li_global}><LogoGlobal to="/">글로벌</LogoGlobal></li>
+                        <SideLi><Link to="/login" className="sideLink1th">로그인</Link></SideLi>
+                        <SideLi><Link to="/submit" className="sideLink2th">회원가입</Link></SideLi>
+                        <li style={li_global}><Link to="/" className="global">글로벌</Link></li>
                 </SideUl>
             </header>
         </div>

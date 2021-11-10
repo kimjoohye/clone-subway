@@ -1,13 +1,17 @@
 import React,{ useState } from 'react'
 import { Link } from 'react-router-dom' 
-import { SwipeImage,ButtonLink,FindSpan,SubsSpan,ButtonPosi,FindIcon,SubsIcon,
-    SubwayContent,ContentMenu,MenuP,TabDiv,Tabli,Prev,Next,ContentMenuC} from './styledComp'
+import { SwipeImage,ButtonLink,Tabli,Prev,Next} from './styledComp'
 import { Swiper, SwiperSlide} from 'swiper/react';
 import SwiperCore, { Pagination, Autoplay } from "swiper";
 import { tabmenuContents } from '../utilities/tabmenuContents'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleLeft,faAngleRight,faCircle } from '@fortawesome/free-solid-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
+
+import img01 from '../styles/img/img01.png'
+import img02 from '../styles/img/img02.png'
+import img03 from '../styles/img/img03.jpg'
+import img04 from '../styles/img/img04.jpg'
 
 import "swiper/swiper.scss"
 import "swiper/components/pagination/pagination.scss"
@@ -41,38 +45,38 @@ function Maincontainer(){
          allowTouchMove = {false}
          >
           <SwiperSlide>
-              <Link to="/"><SwipeImage url={"https//kimjoohye.github.io/clone-subway/images/img01.png"}/></Link>
+              <Link to="/"><SwipeImage url={img01}/></Link>
           </SwiperSlide>
           <SwiperSlide>
-              <Link to="/"><SwipeImage url={"https//kimjoohye.github.io/clone-subway/images/img02.png"}/></Link>
+              <Link to="/"><SwipeImage url={img02}/></Link>
           </SwiperSlide>
           <SwiperSlide>
-              <Link to="/"><SwipeImage url={"https//kimjoohye.github.io/clone-subway/images/img03.jpg"}/></Link>
+              <Link to="/"><SwipeImage url={img03}/></Link>
           </SwiperSlide>
           <SwiperSlide>
-              <Link to="/"><SwipeImage url={"https//kimjoohye.github.io/clone-subway/images/img04.jpg"}/></Link>
+              <Link to="/"><SwipeImage url={img04}/></Link>
           </SwiperSlide>
       </Swiper>
 
-      <ButtonPosi>
+      <div className="buttonPosi">
           <div style={{ width: '600px' }}>
-              <FindSpan>
+              <span className="findSpan">
                 <ButtonLink to="/find">
-                    <FindIcon>매장찾기</FindIcon>
+                    <span className="iconfind">매장찾기</span>
                 </ButtonLink>
-              </FindSpan>
-              <SubsSpan>
+              </span>
+              <span className="subscri">
                 <ButtonLink to="/subscription">
-                    <SubsIcon>가맹신청ㆍ문의</SubsIcon>
+                    <span className="iconsubs">가맹신청ㆍ문의</span>
                 </ButtonLink>
-              </SubsSpan>
+              </span>
           </div>
-      </ButtonPosi>
+      </div>
 
-      <SubwayContent>
-          <ContentMenu>
-              <MenuP>Subway's Menu</MenuP>
-              <TabDiv>
+      <div id="subwayContent">
+          <div style={{ margin: '0px 50px' }}>
+              <p className="menuP">Subway's Menu</p>
+              <div className="tab">
                   <ul>
                       <Tabli menufColor={menufColor} id={id} 
                       onClick={() => {SetId(0); SetmenufColor('#009223')}}>클래식</Tabli>
@@ -83,10 +87,10 @@ function Maincontainer(){
                       <Tabli menufoColor={menufoColor} id={id}
                       onClick={() => {SetId(3); SetmenufoColor('#009223')}}>아침메뉴</Tabli>
                   </ul>
-              </TabDiv>
-              <ContentMenuC id={id}>
+              </div>
+              <div className="tabCon">
                   {tabmenuContents[id].content}
-              </ContentMenuC>
+              </div>
               <Next className="swiper-button-next" nextBackColor={nextBackColor}>
                   <FontAwesomeIcon icon={faAngleRight} size="2x" onMouseUp = {() => {SetnextBackcolor("#ffce32")}}
                onMouseOver={() => {SetnextBackcolor("#ffce32")}} onMouseOut={() => {SetnextBackcolor("#ffffff")}}/>
@@ -96,19 +100,8 @@ function Maincontainer(){
                   <FontAwesomeIcon icon={faAngleLeft} size="2x" onMouseUp = {() => {SetprevBackcolor("#ffce32")}}
               onMouseOver={() => {SetprevBackcolor("#ffce32")}} onMouseOut={() => {SetprevBackcolor("#ffffff")}}/>
               </Prev>
-              <Next className="swiper-button-next" nextBackColor={nextBackColor}>
-                  <FontAwesomeIcon icon={faAngleRight} size="2x" onMouseUp = {() => {SetnextBackcolor("#ffce32")}}
-               onMouseOver={() => {SetnextBackcolor("#ffce32")}} onMouseOut={() => {SetnextBackcolor("#ffffff")}}/>
-              </Next>
-
-              <Prev className="swiper-button-prev" prevBackColor={prevBackColor}>
-                  <FontAwesomeIcon icon={faAngleLeft} size="2x" onMouseUp = {() => {SetprevBackcolor("#ffce32")}}
-              onMouseOver={() => {SetprevBackcolor("#ffce32")}} onMouseOut={() => {SetprevBackcolor("#ffffff")}}/>
-              </Prev>
-              
-             
-          </ContentMenu>
-      </SubwayContent>
+          </div>
+      </div>
 
       <div className="content_second">
           <div className="second_f">
