@@ -34,7 +34,7 @@ export const LogoLink = styled(Link)`
   position: absolute; left: 50%;
   top: 40px; width: 202px; height: 40px;
   transform: translate(-50%, 0);
-  background: url('/images/logo_s.png');
+  background: url('https//kimjoohye.github.io/clone-subway/images/logo_s.png');
   font-size: 0px; z-index: 10000;
 `
 const Menudropdown = keyframes`
@@ -133,7 +133,7 @@ export const SideLink2th = styled(Link)`
 
 export const LogoGlobal = styled(Link)`
   position: absolute; width: 30px; height: 30px;
-  background: url('/images/icon_global.png');
+  background: url('https//kimjoohye.github.io/clone-subway/images/icon_global.png');
   background-repeat: no-repeat;
   background-position: 0 0;
   line-height: 0;
@@ -209,7 +209,7 @@ export const FindIcon = styled.span`
   
   &::before{
     content:"";
-    background: url("/images/icon_map.png") no-repeat 0px 0px;
+    background: url("https//kimjoohye.github.io/clone-subway/images/icon_map.png") no-repeat 0px 0px;
     vertical-align: middle;
     display: inline-block;
     width: 24px; height: 30px;
@@ -223,7 +223,7 @@ export const SubsIcon = styled.span`
 
   &::before{
     content:"";
-    background: url("/images/icon_franchise.png") no-repeat 0px 0px;
+    background: url("https//kimjoohye.github.io/clone-subway/images/icon_franchise.png") no-repeat 0px 0px;
     vertical-align: middle;
     display: inline-block;
     width: 33px; height: 30px;
@@ -245,7 +245,7 @@ export const MenuP = styled.p`
   color: #292929; font-size: 35px;
   font-weight: bolder;
   padding: 15px 0px 0px 20px;
-  background-image: url('/images/bul_tit.png');
+  background-image: url('https//kimjoohye.github.io/clone-subway/images/bul_tit.png');
   background-repeat: no-repeat;
   background-size: 53px;
   width: 1170px; position: relative;

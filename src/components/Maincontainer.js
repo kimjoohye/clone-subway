@@ -41,16 +41,16 @@ function Maincontainer(){
          allowTouchMove = {false}
          >
           <SwiperSlide>
-              <Link to="/"><SwipeImage url={"/images/img01.png"}/></Link>
+              <Link to="/"><SwipeImage url={"https//kimjoohye.github.io/clone-subway/images/img01.png"}/></Link>
           </SwiperSlide>
           <SwiperSlide>
-              <Link to="/"><SwipeImage url={"/images/img02.png"}/></Link>
+              <Link to="/"><SwipeImage url={"https//kimjoohye.github.io/clone-subway/images/img02.png"}/></Link>
           </SwiperSlide>
           <SwiperSlide>
-              <Link to="/"><SwipeImage url={"/images/img03.jpg"}/></Link>
+              <Link to="/"><SwipeImage url={"https//kimjoohye.github.io/clone-subway/images/img03.jpg"}/></Link>
           </SwiperSlide>
           <SwiperSlide>
-              <Link to="/"><SwipeImage url={"/images/img04.jpg"}/></Link>
+              <Link to="/"><SwipeImage url={"https//kimjoohye.github.io/clone-subway/images/img04.jpg"}/></Link>
           </SwiperSlide>
       </Swiper>
 
