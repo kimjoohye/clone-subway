@@ -1,15 +1,15 @@
 $maincolor: #009223;
-$logo_s: url('./img/logo_s.png');
-$icon_global: url('./img/icon_global.png');
-$icon_map: url('./img/icon_map.png');
-$icon_franchise: url('./img/icon_franchise.png');
-$bul_tit: url('./img/bul_tit.png');
-$btn_more: url('./img/btn_more.png');
-$section02: url('./img/section02.png');
-$ad: url('./img/ad.jpg');
-$quickmenu: url('./img/icon_quickmenu.png');
-$instar: url('./img/icon_sns_instar.png');
-$facebook: url('./img/icon_sns_facebook.png');
+$logo_s: './img/logo_s.png';
+$icon_global: './img/icon_global.png';
+$icon_map: './img/icon_map.png';
+$icon_franchise: './img/icon_franchise.png';
+$bul_tit: './img/bul_tit.png';
+$btn_more: './img/btn_more.png';
+$section02: './img/section02.png';
+$ad: './img/ad.jpg';
+$quickmenu: './img/icon_quickmenu.png';
+$instar: './img/icon_sns_instar.png';
+$facebook: './img/icon_sns_facebook.png';
 
 //헤더
 .nav{
@@ -30,7 +30,7 @@ $facebook: url('./img/icon_sns_facebook.png');
     position: absolute; left: 50%;
     top: 40px; width: 202px; height: 40px;
     transform: translate(-50%, 0);
-    background: $logo_s;
+    background: url($logo_s);
     font-size: 0px; z-index: 10000;
 }
 
@@ -68,7 +68,7 @@ $facebook: url('./img/icon_sns_facebook.png');
 
 .global{
     position: absolute; width: 30px; height: 30px;
-    background: $icon_global;
+    background: url($icon_global);
     background-repeat: no-repeat;
     background-position: 0 0;
     line-height: 0;
@@ -97,7 +97,7 @@ $facebook: url('./img/icon_sns_facebook.png');
     
     &::before{
       content:"";
-      background: $icon_map no-repeat 0px 0px;
+      background: url($icon_map) no-repeat 0px 0px;
       vertical-align: middle;
       display: inline-block;
       width: 24px; height: 30px;
@@ -117,7 +117,7 @@ $facebook: url('./img/icon_sns_facebook.png');
   
     &::before{
       content:"";
-      background: $icon_franchise no-repeat 0px 0px;
+      background: url($icon_franchise) no-repeat 0px 0px;
       vertical-align: middle;
       display: inline-block;
       width: 33px; height: 30px;
@@ -135,7 +135,7 @@ $facebook: url('./img/icon_sns_facebook.png');
     color: #292929; font-size: 35px;
     font-weight: bolder;
     padding: 15px 0px 0px 20px;
-    background-image: $bul_tit;
+    background-image: url($bul_tit);
     background-repeat: no-repeat;
     background-size: 53px;
     width: 1170px; position: relative;
@@ -164,7 +164,7 @@ $facebook: url('./img/icon_sns_facebook.png');
     }
     &:hover::after{
         content: "";
-        background: $btn_more no-repeat 0px 0px;
+        background: url($btn_more) no-repeat 0px 0px;
         display: inline-block;
         width: 98px; height: 98px;
         position: absolute;
@@ -187,7 +187,7 @@ $facebook: url('./img/icon_sns_facebook.png');
 
 //메인 상단 2
 .content_second{
-    background: $section02 no-repeat;
+    background: url($section02) no-repeat;
     height: 790px;
 }
 .second_f{
@@ -353,7 +353,7 @@ $facebook: url('./img/icon_sns_facebook.png');
 
                 div{
                     width: 70px; height: 70px;
-                    background: $quickmenu no-repeat;
+                    background: url($quickmenu) no-repeat;
                 }
                 .quick1{
                     background-position: 0px 0px;
@@ -455,17 +455,17 @@ $facebook: url('./img/icon_sns_facebook.png');
         }
         .insta{
             right: 250px;
-            background: $instar no-repeat 0 0;
+            background: url($instar) no-repeat 0 0;
         }
         .facebook{
-            background: $facebook no-repeat 0 0;
+            background: url($facebook) no-repeat 0 0;
         }
         
         .insta::after{
             content: '';
             display: inline-block;
             width: 50px; height: 50px;
-            background: $instar no-repeat 100% 0;
+            background: url($instar) no-repeat 100% 0;
             opacity: 0;
             transition-duration: 0.2s;  
         }
@@ -477,7 +477,7 @@ $facebook: url('./img/icon_sns_facebook.png');
             content: '';
             display: inline-block;
             width: 50px; height: 50px;
-            background: $facebook no-repeat 100% 0;
+            background: url($facebook) no-repeat 100% 0;
             opacity: 0;
             transition-duration: 0.2s;  
         }
