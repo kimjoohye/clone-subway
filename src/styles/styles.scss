@@ -608,12 +608,14 @@ $facebook: './img/icon_sns_facebook.png';
         top: 12px;
         left: 4px;
         transform: rotate(-45deg);
+        transition: all 0.1s ease 0.1s;
     }
 
     .check > .icon::after{
         top: 21px;
         left: 13px;
         transform: rotate(-135deg);
+        transition: all 0.1s ease;
     }
 
     .check > input:checked ~ .icon::before{
