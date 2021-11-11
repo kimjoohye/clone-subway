@@ -330,7 +330,7 @@ $facebook: './img/icon_sns_facebook.png';
     }
 }
 .ad{
-    background: $ad no-repeat 0 0;
+    background: url($ad) no-repeat 0 0;
     width: 270px; height: 300px;
     border-radius: 0px 40px 0px 40px;
 }
