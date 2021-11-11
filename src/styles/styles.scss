@@ -495,3 +495,179 @@ $facebook: './img/icon_sns_facebook.png';
     top: 55px;
     background-color: #666666;
 }
+
+/*로그인 페이지*/
+.loginContainer{
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #f6f6f6;
+    width: 100%;
+    padding: 80px 0px;
+}
+
+.loginForm{
+    box-sizing: border-box;
+    width: 650px;
+    margin: 0px auto;
+    padding: 80px 80px 60px;
+    background-color: #FFFFFF;
+    border-radius: 30px 0px 30px 0px;
+
+    h2{
+        font-size: 40px;
+        text-align: center;
+        color: #292929;
+    }
+    p{
+        color: #919191;
+        text-align: center;
+        margin-top: 20px;
+        line-height: 25px;
+        font-weight: bold;
+    }
+    form{
+        margin-top: 45px;
+    }
+
+    form > ul li{
+        list-style-type: none;
+    }
+    /*input 태그*/
+    .eidC, .pwC{
+        display: flex;
+        height: 85px;
+    }
+
+    .eidC{
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .eidC > li:first-child,
+    .pwC > li:first-child{
+        margin-left: 25px;
+        width: 120px;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+    }
+
+    #emailid, #pw{
+        border: none;
+        margin-left: 25px;
+        width: 300px;
+        height: 100%;
+    }
+
+    #emailid:focus,
+    #pw:focus{
+        outline:none;
+    }
+
+    #emailid::placeholder,
+    #pw::placeholder{
+        color: #e5e5e5;
+        font-weight: 300;
+    }
+    /*체크박스*/
+    .check{
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 10px;
+        position: relative;
+        width: 170px;
+    }
+
+    .check > input{
+        display: none;
+    }
+    .check > .icon{
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background-color: transparent;
+        border: 2px solid #e5e5e5;
+        border-radius: 50px;
+        position: relative;
+        margin-right: 7px;
+    }
+
+    .check > .icon::before,
+    .check > .icon::after{
+        content: '';
+        display: inline-block;
+        width: 5px;
+        height: 0px;
+        background-color: $maincolor;
+        position: absolute;
+        transform-origin: left top;
+    }
+
+    .check > .icon::before{
+        top: 12px;
+        left: 4px;
+        transform: rotate(-45deg);
+    }
+
+    .check > .icon::after{
+        top: 21px;
+        left: 13px;
+        transform: rotate(-135deg);
+    }
+
+    .check > input:checked ~ .icon::before{
+        height: 10px;
+        transition: all 0.1s ease;
+    }
+
+    .check > input:checked ~ .icon::after{
+        height: 22px;
+        transition: all 0.1s ease 0.1s;
+    }
+
+    .check > .checkWrite{
+        position: absolute;
+        font-weight: 600;
+        display: inline-block;
+        margin: 5px 0px;
+        box-sizing: border-box;
+    }
+    /*로그인 버튼*/
+    li > button{
+        width: 100%;
+        height: 70px;
+        background-color: $maincolor;
+        color: #FFFFFF;
+        font-weight: 600;
+        font-size: 18px;
+        margin-top: 40px;
+        border: none;
+        cursor: pointer;
+    }
+    li > button:hover{
+        background-color: #098326;
+        transition: all 0.1s;
+    }
+    /*찾기, 회원가입 링크*/
+    .findSignin{
+        text-align: center;
+        margin-top: 35px;
+        font-weight: 600;
+        ul{
+            li{
+                display: inline-block;
+                list-style-type: none;
+                color: #999999;
+            }
+            li::after{
+                content:'|';
+                margin: 0 40px;
+            }
+            li:nth-child(3)::after{
+                content: '';
+                margin: 0;
+            }
+        }
+    }
+}

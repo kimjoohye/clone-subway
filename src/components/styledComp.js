@@ -165,4 +165,8 @@ export const Next = styled.button`
   cursor: pointer;
   background-color: ${props => props.nextBackColor};
 `
-
+//로그인 페이지
+export const LoginDiv = styled.div`
+  border: ${props => props.actived === true ? '1px solid #009223': '1px solid #e5e5e5'};
+  width: 100%;
+`
